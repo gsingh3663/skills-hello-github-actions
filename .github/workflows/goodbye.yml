@@ -10,3 +10,6 @@ jobs:
       
       - name: Running a multi-line script
         run: echo testing multi-line action | echo 2nd test. 
+      
+      - name: Running a html file
+        run: echo './index.html'

@@ -6,9 +6,9 @@ jobs:
     name: Post commit message
     runs-on: ubuntu-latest
     steps:
-      run: echo push successful 
+      - run: echo push successful 
       
-      name: Running a multi-line script
-      run: |
+      - name: Running a multi-line script
+        run: |
         echo testing multi-line action
         echo 2nd test. 

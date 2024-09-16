@@ -1,12 +1,12 @@
 name: Post commit message
-on: [commit]
+on: [push]
 
 jobs:
   build:
     name: Post commit message
     runs-on: ubuntu-latest
     steps:
-      run: echo commit successful 
+      run: echo push successful 
       
       name: Running a multi-line script
       run: |

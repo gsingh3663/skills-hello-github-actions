@@ -2,7 +2,7 @@ name: Post commit message
 on: [push]
 jobs:
   build:
-    name: New Test
+    name: Post commit message
     runs-on: ubuntu-latest
     steps:
       - run: echo first step - push successful 
@@ -13,4 +13,4 @@ jobs:
           echo 2nd test. 
       
       - name: Running a html file
-        run: run skills-hello-github-actions/index.html
+        run: cat skills-hello-github-actions/index.html

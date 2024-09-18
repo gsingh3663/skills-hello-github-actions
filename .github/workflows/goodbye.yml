@@ -9,8 +9,8 @@ jobs:
       
       - name: Running a multi-line script
         run: |
-        echo testing multi-line action
-        echo 2nd test. 
+          echo testing multi-line action
+          echo 2nd test. 
       
       - name: Running a html file
         run: run skills-hello-github-actions/index.html

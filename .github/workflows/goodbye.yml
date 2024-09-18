@@ -1,15 +1,16 @@
 name: Post commit message
 on: [push]
-
 jobs:
   build:
-    name: Post commit message
+    name: New Test
     runs-on: ubuntu-latest
     steps:
-      - run: echo push successful 
+      - run: echo first step - push successful 
       
       - name: Running a multi-line script
-        run: echo testing multi-line action | echo 2nd test. 
+        run: |
+        echo testing multi-line action
+        echo 2nd test. 
       
       - name: Running a html file
-        run: cat index.html
+        run: run skills-hello-github-actions/index.html
